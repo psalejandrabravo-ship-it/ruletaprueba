@@ -31,7 +31,7 @@ La aplicación queda disponible en `http://localhost:8080`.
 npm run build
 ```
 
-El script comprueba TypeScript (`tsc --noEmit`) y genera el sitio estático en `dist/`.
+El script comprueba TypeScript (`tsc --noEmit`) y genera el sitio estático en `dist/`. No ejecuta migraciones ni pide variables de entorno.
 
 ## Visualizar la compilación
 
@@ -45,7 +45,13 @@ npm run preview
 2. Publica la carpeta `dist/` en un alojamiento estático (Vercel, Netlify, GitHub Pages, etc.).
 3. No hace falta configurar variables de entorno ni secretos.
 
-En Vercel, conecta este repositorio. El proyecto ya incluye `vercel.json` para que las rutas recaigan en `index.html`.
+En **Vercel**, conecta este repositorio. El archivo `vercel.json` ya indica:
+
+- comando de compilación: `npm run build` (`tsc --noEmit && vite build`)
+- carpeta de salida: `dist`
+- reescritura de rutas hacia `index.html`
+
+No uses un Output Directory distinto de `dist`, ni añadas base de datos, autenticación ni variables de entorno.
 
 Tras desplegarla, la aplicación sigue funcionando sin conexión a servicios de terceros: el contenido y las personalizaciones viven en el navegador de quien facilita la actividad.
 
