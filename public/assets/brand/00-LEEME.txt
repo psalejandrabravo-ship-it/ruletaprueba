@@ -1,0 +1,38 @@
+KIT DE MARCA MIRARIM
+===================
+
+Nombre exacto: MIRARIM
+
+Origen real
+  MIRARIM nació de la unión de fragmentos de nombres de
+  integrantes de la familia de su creadora.
+
+Construcción conceptual
+  MIRar · creAR · IMaginar
+  MIR + AR + IM = MIRARIM
+  Esta construcción expresa el propósito. No es el origen histórico.
+
+Propósito
+  Mirar para descubrir.
+  Crear para aprender.
+  Imaginar para crecer.
+
+Isotipo
+  Nombre: El Origen
+  Definición: dos formas simétricas que se reflejan
+  y una A central que las une.
+
+Contenido
+  01-Logotipo        Horizontal y vertical, color / negro / blanco
+  02-Isotipo         Color, negro y blanco, más favicon de 16 px
+  03-Iconos          Aplicación 1024 px y avatar 1080 px
+  04-Especificaciones  Paleta y tipografía
+  05-Manual          Manual de identidad visual (PDF)
+
+Tamaño mínimo del isotipo completo: 24 px en medios digitales
+ y 8 mm en impresión. Para tamaños de 16 a 23 px debe utilizarse
+la versión simplificada. El favicon de 16 px es una versión
+específica optimizada ópticamente y no una reducción automática
+del isotipo completo.
+
+El logotipo permanece unido, sin espacios.

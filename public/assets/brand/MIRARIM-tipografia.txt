@@ -1,0 +1,35 @@
+TIPOGRAFÍA MIRARIM
+=================
+
+1. Logotipo tipográfico
+   El logotipo MIRARIM es un dibujo vectorial propio
+   (trazo geométrico redondeado). No se sustituye por Nunito Sans
+   ni por ninguna otra fuente. Usar siempre los SVG o PNG de este kit.
+
+2. Textos y aplicaciones
+   Familia: Nunito Sans
+   Pesos: Regular 400, Semibold 600, ExtraBold 800
+   Enlace oficial:
+   https://fonts.google.com/specimen/Nunito+Sans
+   Licencia: SIL Open Font License 1.1
+
+3. En texto corrido, utiliza Nunito Sans ExtraBold
+   con un espaciado entre letras ligeramente reducido
+   cuando se escriba el nombre MIRARIM en caja alta.
+
+4. Alternativas gratuitas
+   Nunito
+   https://fonts.google.com/specimen/Nunito
+   Outfit
+   https://fonts.google.com/specimen/Outfit
+   Plus Jakarta Sans
+   https://fonts.google.com/specimen/Plus+Jakarta+Sans
+   Atkinson Hyperlegible
+   https://fonts.google.com/specimen/Atkinson+Hyperlegible
+   Varela Round
+   https://fonts.google.com/specimen/Varela+Round
+
+5. En texto, la marca se escribe MIRARIM
+   (siete letras, mayúsculas, sin espacios ni tildes).
+   No escribir Mirarim, MiraRim, MIRARI, MIRARIN ni MIRARIAM.
+   MIR AR IM no debe usarse como logotipo.

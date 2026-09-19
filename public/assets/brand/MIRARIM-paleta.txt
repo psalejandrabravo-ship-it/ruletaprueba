@@ -1,0 +1,43 @@
+PALETA MIRARIM
+==============
+
+Nombre de marca (exacto): MIRARIM
+
+Índigo profundo
+  HEX  #2B2155
+  RGB  43, 33, 85
+  CMYK 49, 61, 0, 67
+  Uso  Imaginación y confianza. Color estructural.
+
+Coral cálido
+  HEX  #E07A5F
+  RGB  224, 122, 95
+  CMYK 0, 46, 58, 12
+  Uso  Vínculo y sensibilidad. La A central.
+
+Amarillo dorado
+  HEX  #E6B84C
+  RGB  230, 184, 76
+  CMYK 0, 20, 67, 10
+  Uso  Acento creativo. Semilla dorada en el espacio interior de la A.
+
+Crema claro
+  HEX  #F7F1E6
+  RGB  247, 241, 230
+  CMYK 0, 3, 7, 3
+  Uso  Papel, descanso visual, fondos de ficha y pantalla.
+
+Tinta
+  HEX  #1E1830
+  RGB  30, 24, 48
+  CMYK 38, 50, 0, 81
+  Uso  Texto editorial y versión negra del sello.
+
+Los valores CMYK son conversiones aproximadas desde RGB.
+Para impresión profesional se recomienda realizar una prueba de color.
+
+Proporción de uso
+  Índigo  ~70%  estructura
+  Crema   ~20%  fondos
+  Coral   ~8%   A central y llamados
+  Oro     ~2%   semilla dorada y filetes
