@@ -10,12 +10,14 @@ dist/
 .vercel/
 *.tsbuildinfo
 
-# Local / platform
+# Local / sandbox
 .grok/
 .project_id
 .env
 .env.*
 !.env.example
+attachments/
+AGENTS.md
 
 # QA / generated
 screenshots/
@@ -27,7 +29,3 @@ coverage/
 Thumbs.db
 .idea/
 .vscode/
-
-# Sandbox / attachments (marca oficial ya está en public/assets/brand)
-attachments/
-AGENTS.md

@@ -4,6 +4,8 @@ Aplicación web de **MIRARIM** para profesionales de la educación y la psicolog
 
 Permite girar una ruleta de categorías psicoeducativas y conversar a partir de una pregunta o situación. No solicita, registra ni guarda nombres, respuestas, diagnósticos ni otros datos personales.
 
+Es una aplicación **estática**: se ejecuta por completo en el navegador. No hay backend, autenticación, base de datos ni variables de entorno.
+
 ## Requisitos previos
 
 - Node.js 20 o superior
@@ -21,7 +23,7 @@ npm install
 npm run dev
 ```
 
-La aplicación queda disponible en el puerto que indique Vite (en este proyecto, `8080`).
+La aplicación queda disponible en `http://localhost:8080`.
 
 ## Compilación
 
@@ -29,11 +31,7 @@ La aplicación queda disponible en el puerto que indique Vite (en este proyecto,
 npm run build
 ```
 
-La compilación genera el sitio listo para producción. Comprueba TypeScript con:
-
-```bash
-npm run typecheck
-```
+El script comprueba TypeScript (`tsc --noEmit`) y genera el sitio estático en `dist/`.
 
 ## Visualizar la compilación
 
@@ -41,19 +39,13 @@ npm run typecheck
 npm run preview
 ```
 
-o, si necesitas reiniciar un visor de producción ya iniciado:
-
-```bash
-npm run preview:restart
-```
-
 ## Publicación como sitio estático
 
-La lógica del juego se ejecuta por completo en el navegador. No hay backend propio, autenticación, base de datos remota ni API externas.
-
 1. Ejecuta `npm run build`.
-2. Publica el resultado de la compilación en un alojamiento estático o en un proveedor compatible con el adaptador del proyecto (por ejemplo Vercel).
+2. Publica la carpeta `dist/` en un alojamiento estático (Vercel, Netlify, GitHub Pages, etc.).
 3. No hace falta configurar variables de entorno ni secretos.
+
+En Vercel, conecta este repositorio. El proyecto ya incluye `vercel.json` para que las rutas recaigan en `index.html`.
 
 Tras desplegarla, la aplicación sigue funcionando sin conexión a servicios de terceros: el contenido y las personalizaciones viven en el navegador de quien facilita la actividad.
 
@@ -113,7 +105,7 @@ Solo la configuración de la actividad, bajo la clave `mirarim-ruleta-config`:
 - historial de actividades
 - preguntas utilizadas en rondas anteriores
 
-La capa de persistencia está en [`src/lib/persistence/local-storage.ts`](src/lib/persistence/local-storage.ts) y se puede reemplazar en el futuro por un almacenamiento asociado a una cuenta sin reescribir la lógica del juego.
+La capa de persistencia está en [`src/lib/persistence/local-storage.ts`](src/lib/persistence/local-storage.ts).
 
 ## Cómo restablecer los datos locales durante una prueba
 
@@ -129,6 +121,7 @@ Luego recarga la página.
 
 ## Organización del código
 
+- `src/main.tsx` — punto de entrada
 - `src/app/App.tsx` — orquesta las cuatro vistas
 - `src/components/views/` — Inicio, Preparar, Juego y Resumen
 - `src/components/wheel/` — ruleta y leyenda
