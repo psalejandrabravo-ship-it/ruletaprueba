@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.node_modules.lock
+
+# Build / cache
+dist/
+.output/
+.nitro/
+.tanstack/
+.vercel/
+*.tsbuildinfo
+
+# Local / platform
+.grok/
+.project_id
+.env
+.env.*
+!.env.example
+
+# QA / generated
+screenshots/
+artifacts/
+coverage/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Sandbox / attachments (marca oficial ya está en public/assets/brand)
+attachments/
+AGENTS.md
