@@ -1,0 +1,115 @@
+@import "@fontsource/nunito-sans/latin-400.css";
+@import "@fontsource/nunito-sans/latin-ext-400.css";
+@import "@fontsource/nunito-sans/latin-600.css";
+@import "@fontsource/nunito-sans/latin-ext-600.css";
+@import "@fontsource/nunito-sans/latin-800.css";
+@import "@fontsource/nunito-sans/latin-ext-800.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #f7f1e6;
+  --color-cream-deep: #efe6d4;
+  --color-surface: #fffdf9;
+  --color-indigo: #2b2155;
+  --color-indigo-hover: #3a2d6e;
+  --color-indigo-soft: #4a406c;
+  --color-coral: #e07a5f;
+  --color-coral-hover: #c96a51;
+  --color-gold: #e6b84c;
+  --color-ink: #1e1830;
+  --color-ink-muted: #5c556e;
+  --color-border: #ddd4c4;
+  --color-danger: #8b3535;
+  --color-danger-bg: #f6e6e1;
+  --color-ok: #2b6b4f;
+  --color-ok-bg: #e4efe8;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  --shadow-card:
+    0 0 0 1px rgba(30, 24, 48, 0.06),
+    0 1px 2px -1px rgba(30, 24, 48, 0.06),
+    0 10px 28px -12px rgba(43, 33, 85, 0.16);
+
+  --shadow-modal:
+    0 0 0 1px rgba(30, 24, 48, 0.08),
+    0 16px 40px -12px rgba(43, 33, 85, 0.28);
+
+  --ease-out-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-wheel: cubic-bezier(0.12, 0.62, 0.08, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+    color: var(--color-indigo);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-coral);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-coral) 38%, white);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .brand-name {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .tap-target {
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wheel-disk {
+    transition-duration: 450ms !important;
+    transition-timing-function: ease-out !important;
+  }
+}
